@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="userinfo">
+      
+        <form bindsubmit="formsubmit">
+ 
+        <view class="nickname-wrapper" style="height: 133rpx; display: flex; box-sizing: border-box">
+          
+          ☎️   <input style="width: 366rpx; height: 62rpx; display: flex; box-sizing: border-box; left: 50rpx; top: 0rpx" name="phone" class="nickname-input" placeholder="请输入待查询的号码" bind:change="onInputChange" />
+
+        </view>
+
+        <view class="nickname-wrapper">
+       
+          <button  form-type="submit" type="primary" style="width: 429rpx; height: 72rpx; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx; display: block">查询
+          </button>
+        </view>
+        </form>
+   
+    </view>
+    <view class="info" style="width: 572rpx; height: 595rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 6rpx">  
+    <text style="position: fixed; left: 152rpx; top: 616rpx">电话号码: {{tel}}</text>  
+    <text style="position: fixed; left: 152rpx; top: 708rpx">归属地: {{info.province}} {{info.city}}</text>  
+    <text  style="position: fixed; left: 152rpx; top: 796rpx">运营商: {{info.operator}}</text>  
+  </view>  
+  <view class="list">  
+    <block wx:for="{{data}}" wx:key="index">  
+      <view class="item">  
+        <text style="position: relative; left: -72rpx; top: -231rpx">{{item.name}} : {{item.msg}}</text>  
+      </view>  
+    </block>  
+  </view>  
+  
+
+    
+  </view>
+</scroll-view>
