@@ -38,18 +38,32 @@ Page({
         tel: phone,
       },
       success(res) {
-        // 处理成功响应
-        console.log(res.data);
-        a.setData({
-          data: res.data.data,
-          info: res.data.info,
-          tel: res.data.tel
-      });
+        if(res.data.success==true){
+// 处理成功响应
+          console.log(res.data);
+          a.setData({
+            data: res.data.data,
+            info: res.data.info,
+            tel: res.data.tel
+          });
+        }else{
+          wx.showToast({
+            title: res.data.message,
+            icon: "none",
+            duration: 5e3
+          });
+        }
+        
        
         
       },
       fail(err) {
         // 处理失败情况
+        wx.showToast({
+          title: err,
+          icon: "none",
+          duration: 5e3
+        });
         console.error(err);
       }
     });
