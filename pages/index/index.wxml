@@ -13,21 +13,21 @@
 
         <view class="nickname-wrapper">
        
-          <button  form-type="submit" type="primary" style="width: 560rpx; height: 85rpx; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx; display: block">查询
+          <button  form-type="submit" type="primary" style="width: 560rpx; height: 85rpx; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx; display: block">🔍搜索
           </button>
         </view>
         </form>
    
     </view>
     <view class="info" style="width: 581rpx; height: 314rpx; display: block; box-sizing: border-box; position: relative; left: 46rpx; top: 7rpx">  
-    <text style="position: fixed; left: 148rpx; top: 567rpx">电话号码: {{tel}}</text>  
-    <text style="position: fixed; left: 152rpx; top: 681rpx">归属地: {{info.province}} {{info.city}}</text>  
-    <text  style="position: fixed; left: 152rpx; top: 781rpx">运营商: {{info.operator==null?"无":info.operator}}</text>  
+    <text style="position: fixed; left: 148rpx; top: 567rpx">TEL: {{tel}}</text>  
+    <text style="position: fixed; left: 152rpx; top: 668rpx">归属地: {{info.province}} {{info.city}}</text>  
+    <text  style="position: fixed; left: 152rpx; top: 770rpx">运营商: {{info.operator==null?"无":info.operator}}</text>  
   </view>  
   <view class="list">  
     <block wx:for="{{data}}" wx:key="index">  
       <view class="item" style="width: 581rpx; height: 95rpx; display: block; box-sizing: border-box">  
-        <text style="left: 62rpx; top: -83rpx; position: relative">{{item.name}} : {{item.msg}}</text>  
+        <text style="left: 68rpx; top: -102rpx; position: relative">{{item.name}} : {{item.msg}}</text>  
 
 
       </view>  
