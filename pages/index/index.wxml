@@ -7,7 +7,7 @@
  
         <view class="nickname-wrapper" style="height: 133rpx; display: flex; box-sizing: border-box; width: 620rpx">
           <text style="width: 54rpx; display: block; box-sizing: border-box; height: 47rpx; position: relative; left: 0rpx; top: 11rpx">☎️  </text>
-           <input style="width: 485rpx; height: 75rpx; display: flex; box-sizing: border-box; left: 50rpx; top: 0rpx" name="phone" class="nickname-input" placeholder="请输入待查询的号码" bind:change="onInputChange" />
+           <input style="width: 485rpx; height: 75rpx; display: flex; box-sizing: border-box; left: 50rpx; top: 0rpx" name="phone" class="nickname-input" placeholder="请输入查询信息" bind:change="onInputChange" />
 
         </view>
 

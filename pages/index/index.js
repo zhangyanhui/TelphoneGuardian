@@ -23,7 +23,7 @@ Page({
       city: "**市",  
       operator: "移动/联通/电信"  
     },  
-    tel: "188*********"  
+    tel: "***********"  
   }  
   ,
   formsubmit(e) {
